@@ -99,10 +99,7 @@ export default function () {
     }
     const options = Object.assign({
       defaultPath: defaultDownloadFolder,
-      properties: ['openDirectory'], // openDirectory、multiSelections
-      // filters: [
-      //   { name: 'Audio', extensions: ['mp3', 'wma'] }
-      // ],
+      properties: ['openDirectory'], // openDirectory、multiSelection
     }, _data);
     const result = await dialog.showOpenDialog(options);
     return result;

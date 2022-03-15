@@ -8,7 +8,7 @@ export default function createWindow (BrowserWindow) {
     minHeight: 500,
     frame: false,
     fullscreenable: false,
-    minimizable: false,
+    minimizable: true,
     maximizable: true,
     resizable: true,
     useContentSize: true,

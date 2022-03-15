@@ -56,6 +56,7 @@ export function showAppMenu () {
 }
 
 export function showSkinsWin (skinsWindow, mainWindow) {
+  if (!skinsWindow || !mainWindow) return;
   let { width: screenWidth, height: screenHeight } = screen.getPrimaryDisplay().size;
   const { x, y, width, height } = mainWindow.getBounds();
   const [ skinsWidth, skinsHeight ] = skinsWindow.getSize();
