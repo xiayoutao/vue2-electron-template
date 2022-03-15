@@ -1,38 +1,46 @@
 {
-  "name": "vue2-electron-demo",
+  "name": "vue2-electron-template",
   "version": "0.1.0",
   "private": true,
+  "productName": "Demo",
+  "author": "xiayoutao",
+  "description": "electron demo",
+  "copyright": "Copyright © 2022 xiayoutao All rights reserved",
+  "main": "background.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "deepmerge": "^4.2.2",
+    "electron-dl": "^3.3.0",
+    "element-ui": "^2.15.6",
+    "lodash": "^4.17.21",
+    "nedb": "^1.8.0",
+    "umy-ui": "^1.1.6",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.3",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.14",
     "@vue/cli-plugin-eslint": "~4.5.14",
     "@vue/cli-service": "~4.5.14",
     "babel-eslint": "^10.1.0",
+    "electron": "^13.0.0",
+    "electron-devtools-installer": "^3.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.1.0",
+    "vue-cli-plugin-electron-builder": "~2.1.1",
+    "vue-template-compiler": "^2.6.14"
   },
   "browserslist": [
     "> 1%",

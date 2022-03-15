@@ -1,0 +1,35 @@
+$color: #007F4D;
+$success: #409EFF;
+$warning: #E6A23C;
+$danger: #E64340;
+$info: #909399;
+$--color-primary: $color;
+$--color-success: $success;
+$--color-warning: $warning;
+$--color-danger: $danger;
+$--color-info: $info;
+
+@mixin flex-row($align-items: stretch, $justify-content: flex-start) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-direction: row;
+}
+
+// 竖行排版，一行显示一个
+@mixin flex-column($align-items: stretch, $justify-content: flex-start) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-direction: column;
+}
+
+// 自动换行
+@mixin  flex-wrap ($align-items: stretch, $justify-content: flex-start, $flex-direction: row) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-direction: $flex-direction;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
